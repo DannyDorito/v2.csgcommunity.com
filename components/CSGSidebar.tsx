@@ -65,7 +65,7 @@ export const CSGSidebar = () => {
 
   return (
     <Sidebar>
-      <SidebarHeader className="orange">CSG Exile</SidebarHeader>
+      <SidebarHeader className="orange" style={{ paddingRight: '8px'}}>CSG Exile</SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupContent>
@@ -90,11 +90,11 @@ export const CSGSidebar = () => {
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
-      <SidebarFooter>
+      <SidebarFooter style={{ paddingRight: '8px'}}>
         <SidebarMenuItem>
           <div className="flex orange">
             <Copyright />
-            &nbsp;CSG {new Date().getFullYear()}
+            &nbsp;CSG 2024
           </div>
         </SidebarMenuItem>
       </SidebarFooter>

@@ -13,7 +13,7 @@ export default function Contact() {
         <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
           Steam
         </h2>
-        <Button asChild className="background-orange">
+        <Button variant="secondary" asChild className="background-orange">
           <Link
             href="https://steamcommunity.com/groups/CerberusStompingGrounds"
             rel="noopener noreferrer"
@@ -26,7 +26,7 @@ export default function Contact() {
         <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
           Twitter
         </h2>
-        <Button asChild className="background-orange">
+        <Button variant="secondary" asChild className="background-orange">
           <Link
             href="https://twitter.com/csg_exile"
             rel="noopener noreferrer"
@@ -39,7 +39,7 @@ export default function Contact() {
         <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
           Email
         </h2>
-        <Button asChild className="background-orange">
+        <Button variant="secondary" asChild className="background-orange">
           <Link
             href="mailto:developer@csgcommunity.com"
             rel="noopener noreferrer"
