@@ -34,7 +34,14 @@ async function VideoComponent(props: CSGVideoProps) {
       muted
       poster={props.fallbackFileName}
       rel="preconnect"
-      style={{ left: '50%', position: 'fixed', top: '50%', transform: 'translate(-50%, -50%)', zIndex: '-1', maxWidth: 'unset !important'}}
+      style={{
+        left: "50%",
+        position: "fixed",
+        top: "50%",
+        transform: "translate(-50%, -50%)",
+        zIndex: "-1",
+        maxWidth: "unset !important",
+      }}
     >
       <source src={props.fileName} type="video/mp4" rel="preload"></source>
       <p className="text-sm text-muted-foreground">Cannot view the video!</p>
