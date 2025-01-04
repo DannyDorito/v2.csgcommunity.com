@@ -65,7 +65,9 @@ export const CSGSidebar = () => {
 
   return (
     <Sidebar>
-      <SidebarHeader className="orange" style={{ paddingRight: '8px'}}>CSG Exile</SidebarHeader>
+      <SidebarHeader style={{ paddingRight: "8px" }}>
+        <h3 className="scroll-m-20 text-2xl font-bold orange">CSG Exile</h3>
+      </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupContent>
@@ -73,11 +75,7 @@ export const CSGSidebar = () => {
               {routes.map((route) => {
                 return (
                   <SidebarMenuItem key={`sidebar-menu-item-${route.name}`}>
-                    <SidebarMenuButton
-                      asChild
-                      isActive={isActive(route.href)}
-                      className={isActive(route.href) ? "asd" : ""}
-                    >
+                    <SidebarMenuButton asChild isActive={isActive(route.href)}>
                       <Link href={route.href}>
                         {route.icon}
                         {route.name}
@@ -90,7 +88,7 @@ export const CSGSidebar = () => {
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
-      <SidebarFooter style={{ paddingRight: '8px'}}>
+      <SidebarFooter style={{ paddingRight: "8px" }}>
         <SidebarMenuItem>
           <div className="flex orange">
             <Copyright />
