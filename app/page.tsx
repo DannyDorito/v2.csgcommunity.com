@@ -12,6 +12,7 @@ export default function Home() {
             position: "absolute",
             justifyContent: "center",
             width: "100%",
+            zIndex: '0'
           }}
         >
           <Image
