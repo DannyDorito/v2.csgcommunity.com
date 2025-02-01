@@ -64,7 +64,7 @@ export const CSGSidebar = () => {
   };
 
   return (
-    <Sidebar>
+    <Sidebar id="sidebar-main">
       <SidebarHeader style={{ paddingRight: "8px" }}>
         <h3 className="scroll-m-20 text-2xl font-bold orange">CSG Exile</h3>
       </SidebarHeader>

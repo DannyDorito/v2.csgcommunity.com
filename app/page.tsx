@@ -8,11 +8,13 @@ export default function Home() {
         <CSGVideo fileName="intro.mp4" fallbackFileName="intro.jpg" />
         <div
           style={{
-            top: "100px",
-            position: "absolute",
-            justifyContent: "center",
-            width: "100%",
-            zIndex: '0'
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            flexDirection: 'column',
+            textAlign: 'center',
+            minHeight: '90vh',
+            minWidth: '100vw'
           }}
         >
           <Image
