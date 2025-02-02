@@ -89,12 +89,10 @@ export const CSGSidebar = () => {
         </SidebarGroup>
       </SidebarContent>
       <SidebarFooter style={{ paddingRight: "8px" }}>
-        <SidebarMenuItem>
-          <div className="flex orange">
-            <Copyright />
-            &nbsp;CSG 2024
-          </div>
-        </SidebarMenuItem>
+        <div className="flex orange">
+          <Copyright />
+          &nbsp;CSG 2024
+        </div>
       </SidebarFooter>
     </Sidebar>
   );

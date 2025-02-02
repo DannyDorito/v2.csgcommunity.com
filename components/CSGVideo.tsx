@@ -35,12 +35,9 @@ async function VideoComponent(props: CSGVideoProps) {
       poster={props.fallbackFileName}
       rel="preconnect"
       style={{
-        left: "50%",
-        position: "fixed",
-        top: "50%",
-        transform: "translate(-50%, -50%)",
-        zIndex: "-1",
-        maxWidth: "unset !important",
+        width: "100%",
+        objectFit: "cover",
+        overflow: 'hidden'
       }}
     >
       <source src={props.fileName} type="video/mp4" rel="preload"></source>

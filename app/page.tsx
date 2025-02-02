@@ -3,33 +3,34 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
-      <main>
-        <CSGVideo fileName="intro.mp4" fallbackFileName="intro.jpg" />
+    <main>
+      <div style={{ display: "grid" }}>
         <div
           style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            flexDirection: 'column',
-            textAlign: 'center',
-            minHeight: '90vh',
-            minWidth: '100vw'
+            gridColumn: "1",
+            gridRow: "1",
+            overflow: "hidden",
+            margin: "auto",
           }}
         >
-          <Image
-            alt="Cerberus Stomping Grounds"
-            src="logo-large.png"
-            width="720"
-            height="487"
-            className="w-5/12 h-auto block"
-            style={{ marginLeft: "auto", marginRight: "auto" }}
-          />
-          <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight text-center lg:text-5xl orange drop-shadow-2xl">
-            Cerberus Stomping Grounds
-          </h1>
+          <CSGVideo fileName="intro.mp4" fallbackFileName="intro.jpg" />
         </div>
-      </main>
-    </div>
+        <div style={{ gridColumn: "1", gridRow: "1" }}>
+          <div>
+            <Image
+              alt="Cerberus Stomping Grounds"
+              src="logo-large.png"
+              width="720"
+              height="487"
+              className=""
+              style={{ marginLeft: "auto", marginRight: "auto" }}
+            />
+            <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight text-center lg:text-5xl orange drop-shadow-2xl">
+              Cerberus Stomping Grounds
+            </h1>
+          </div>
+        </div>
+      </div>
+    </main>
   );
 }
