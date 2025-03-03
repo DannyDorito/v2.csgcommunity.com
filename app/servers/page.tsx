@@ -56,7 +56,7 @@ export default function Servers() {
           width="1125"
           height="656"
         />
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
+        <p className="leading-7 not-first:mt-6">
           Many hours of work have been put towards giving the traders a
           signature apocalyptic look. A large variety of special features have
           been added to further increase functionality and immersion such as
@@ -69,7 +69,7 @@ export default function Servers() {
         <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
           Map Development
         </h3>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
+        <p className="leading-7 not-first:mt-6">
           New areas have been added to the map such as the improved North East
           Airfield and Custom Built military bases containing hidden secrets to
           the origin of the Apocalypse. The downfall of society is evident all
@@ -83,24 +83,24 @@ export default function Servers() {
           width="1125"
           height="656"
         />
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
+        <p className="leading-7 not-first:mt-6">
           Each trader has been built with a backstory in mind.
         </p>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
+        <p className="leading-7 not-first:mt-6">
           The Klen Trader, once a popular campground, and summer getaway was
           overtaken by the virus and abandoned for many years. Survivors later
           stumbled upon it, and fortified it as their new home, transporting
           many crates from the Rify ship wreck to be used as walls. The
           stockpile of loot they built up is now for bargain to other survivors.{" "}
         </p>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
+        <p className="leading-7 not-first:mt-6">
           The Stary Sobor Trader has a similar story to Klen. The old factory
           was abandoned after the outbreak of the virus, and several survivors
           hid their supplies deep inside the concrete jungles of the
           installation. As their group expanded, so did their gear stockpile
           until they decided to barter it away to the highest bidder.
         </p>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
+        <p className="leading-7 not-first:mt-6">
           The Zelenogorsk trader, the largest hospital center in Chernarus, was
           over loaded with the sick as the outbreak spread. Because of its
           importance, U.N. Forces were quick to reinforce the installation, and
@@ -120,14 +120,14 @@ export default function Servers() {
         <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
           Custom Locations
         </h3>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
+        <p className="leading-7 not-first:mt-6">
           Many new military bases, sites, and evac sites have been added for
           increased military presence and gear. Civilian houses are not chocked
           full of automatic assault rifles, as is often the case on Exile
           servers. For this reasons, you must venture out to the higher risk
           sites to gain higher quality loot.
         </p>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
+        <p className="leading-7 not-first:mt-6">
           Many new military bases, sites, and evac sites have been added for
           increased military presence and gear. Civilian houses are not chocked
           full of automatic assault rifles, as is often the case on Exile

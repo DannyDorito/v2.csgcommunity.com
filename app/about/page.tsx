@@ -10,14 +10,14 @@ export default function About() {
         <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
           How we formed
         </h2>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
+        <p className="leading-7 not-first:mt-6">
           The founders of Cerberus Stomping Grounds or CSG community have been
           playing the ARMA games together since early 2014. We met on the
           Definitive Gaming and Stalk & Strike ARMA 2 wasteland servers, and
           developed our team coordination further through the popular mod of
           DayZ, then Epoch and eventually Overpoch.
         </p>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
+        <p className="leading-7 not-first:mt-6">
           ARMA 3 was soon added to the mix, and we have been through many
           communities and game types ever since. Everything from Altis Life to
           Exile to Milsim, we&apos;ve done it at some point. We&apos;ve all
@@ -26,7 +26,7 @@ export default function About() {
           functionality of ARMA 3 and what it takes to be a part of and run a
           successful community.
         </p>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
+        <p className="leading-7 not-first:mt-6">
           We are a dedicated group of skilled players that have decided to put
           our experience and deep knowledge of the game that we love into a
           server we hope you will enjoy.
@@ -34,7 +34,7 @@ export default function About() {
         <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
           Servers we played on
         </h2>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
+        <p className="leading-7 not-first:mt-6">
           Over the years of ARMA, we played on many different game modes created
           by an even larger list of communities, below is a list of all
           servers/communities we have been involved in and/or have played on

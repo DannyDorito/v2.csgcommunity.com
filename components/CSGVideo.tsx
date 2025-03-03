@@ -10,7 +10,7 @@ export const CSGVideo = (props: CSGVideoProps) => {
   return (
     <Suspense
       fallback={
-        <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20 blur-sm">
+        <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20 blur-xs">
           <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
             <Loading />
           </main>
