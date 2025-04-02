@@ -34,7 +34,6 @@ async function VideoComponent(props: CSGVideoProps) {
       muted
       poster={props.fallbackFileName}
       rel="preconnect"
-      onError={() => console.error("Failed to load video:", props.fileName)}
       style={{
         width: "100vw",
         height: "100vh",
