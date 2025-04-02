@@ -3,7 +3,12 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main>
+    <main
+      style={{
+        height: "100vh",
+        overflow: "hidden",
+      }}
+    >
       <div style={{ display: "grid" }}>
         <div
           style={{

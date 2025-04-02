@@ -34,10 +34,12 @@ async function VideoComponent(props: CSGVideoProps) {
       muted
       poster={props.fallbackFileName}
       rel="preconnect"
+      onError={() => console.error("Failed to load video:", props.fileName)}
       style={{
-        width: "100%",
+        width: "100vw",
+        height: "100vh",
         objectFit: "cover",
-        overflow: 'hidden'
+        overflow: "hidden",
       }}
     >
       <source src={props.fileName} type="video/mp4" rel="preload"></source>
