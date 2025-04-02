@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Servers() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+      <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl orange">
           CSG ARMA 3 Exile Chernarus Isles
         </h1>
@@ -147,7 +147,7 @@ export default function Servers() {
           <li>Veresnik Military Compound</li>
           <li>Installation 175</li>
         </ul>
-      </main>
+      </div>
     </div>
   );
 }

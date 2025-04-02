@@ -3,7 +3,7 @@
 export default function Rules() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+      <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl orange">
           Rules - CSG Chernarus Isles
         </h1>
@@ -90,7 +90,7 @@ export default function Rules() {
           by an admin and your gear will be wiped. If further action is required
           it will result in a temporary ban.
         </p>
-      </main>
+      </div>
     </div>
   );
 }

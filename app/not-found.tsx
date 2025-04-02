@@ -21,7 +21,7 @@ import {
 export default function NotFound() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+      <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Card>
           <CardHeader>
             <CardTitle className="scroll-m-20 text-2xl font-extrabold tracking-tight lg:text-2xl">
@@ -45,7 +45,7 @@ export default function NotFound() {
             </TooltipProvider>
           </CardFooter>
         </Card>
-      </main>
+      </div>
     </div>
   );
 }

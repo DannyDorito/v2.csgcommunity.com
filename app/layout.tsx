@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Inter } from "next/font/google";
-import { ThemeProvider } from "next-themes";
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
-import { CSGSidebar } from "@/components/CSGSidebar";
-
-const inter = Inter({ subsets: ["latin"], display: "swap" });
+import { LayoutWrapper } from "./LayoutWrapper";
 
 export const metadata: Metadata = {
   title: "csgcommunity.com",
@@ -20,24 +15,5 @@ export default function Layout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <head />
-      <body className={inter.className}>
-        <SidebarProvider>
-          <CSGSidebar />
-          <main>
-            <SidebarTrigger />
-            <ThemeProvider
-              attribute="class"
-              defaultTheme="dark"
-              disableTransitionOnChange
-            >
-              {children}
-            </ThemeProvider>
-          </main>
-        </SidebarProvider>
-      </body>
-    </html>
-  );
+  return <LayoutWrapper>{children}</LayoutWrapper>;
 }
