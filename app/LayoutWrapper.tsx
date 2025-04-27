@@ -6,6 +6,7 @@ import { ThemeProvider } from "next-themes";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { CSGSidebar } from "@/components/CSGSidebar";
 import { useState } from "react";
+import { useMediaQuery } from "react-responsive";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
@@ -15,6 +16,7 @@ export const LayoutWrapper = ({
   children: React.ReactNode;
 }>) => {
   const [open, setOpen] = useState<boolean>(true);
+  const isXs = useMediaQuery({ query: "(max-width: 768px)" });
 
   return (
     <html lang="en" suppressHydrationWarning>
@@ -22,7 +24,7 @@ export const LayoutWrapper = ({
       <body className={inter.className}>
         <SidebarProvider open={open} onOpenChange={(o) => setOpen(o)}>
           <CSGSidebar />
-          <main className={open ? "w-[calc(100vw - 128px)] ml-[calc(128px)]" : "w-screen"}>
+          <main className={(isXs || open) ? "w-screen" : "w-[calc(100vw - 128px)] ml-[calc(128px)]"}>
             <SidebarTrigger />
             <ThemeProvider
               attribute="class"
