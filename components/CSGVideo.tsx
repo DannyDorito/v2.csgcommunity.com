@@ -25,7 +25,7 @@ export const CSGVideo = (props: CSGVideoProps) => {
   );
 };
 
-async function VideoComponent(props: CSGVideoProps) {
+async function VideoComponent(props: Readonly<CSGVideoProps>) {
   return (
     <video
       loop
